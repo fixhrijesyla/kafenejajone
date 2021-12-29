@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/indexStyle.css"/>
+    <script src="Main.js"></script>
+</head>
+<body>
+    <div class="body">
+        <div class="content">
+    <div class="container">
+        <div class="link-container">
+          <a id="firstA" href="#" onclick="changeForm(0)">Login</a>
+          <a href="#" onclick="changeForm(1)">Register</a>
+        </div>
+        <form id="mainForm" action="">
+          <div class="login forms form-style">
+            <label for="">Email:</label>
+            <input type="text" id='email' class="input login-element" placeholder="Email..." />
+            <label for="">Password:</label>
+            <input type="password" class="input login-element" placeholder="password..." />
+            <input id="submit" type="button" class="input submit" value="Login" onclick="validate('login')" />
+          </div>
+          <div class="register forms hidden">
+            <label for="">Username:</label>
+            <input type="text" class="input register-element" placeholder="username..." />
+            <label for="">Email:</label>
+            <input type="text" class="input register-element" placeholder="Email..." />
+            <label for="">Password:</label>
+            <input type="text" class="input register-element" placeholder="password..." />
+            <input id="submit" type="button" name='asdf' class="input submit" value="Login" onclick="validate('register')" />
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+  
+</body>
+</html>

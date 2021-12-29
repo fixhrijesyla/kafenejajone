@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset = "utf-8" />
+		<meta name = "description"
+			content = "Home" />
+		<meta name = "keyword"
+			content = "kafeneja, kafe" />
+		<meta http-equiv = "author"
+			content = "Fixhrije Syla" />
+		<title> Kafeneja - Ballina </title>
+		<link href="CSS/indexStyle.css" type="text/css" rel="stylesheet" />
+	
+	</head>
+
+	<body>
+		<!--start-header-->
+		<div class="header">
+			<div class="wrap">
+				<div class="top-header">
+					<div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt="logo" title="kafeneja" /></a>
+					</div>
+					<div class="social-icons">
+						<ul>
+							<li><a href="http://www.facebook.com"><img src="images/facebook.png" title="facebook" /></a></li>
+							<li><a href="http://www.twitter.com"><img src="images/twitter.png" title="twitter" /></a></li>
+						</ul>
+					</div>
+					<div class="clear"> </div>
+				</div>
+				<!--start-top-nav-->
+				<div class="top-nav">
+					<div class="top-nav-left">
+						<ul>
+							<li class="active"><a href="index.html">Ballina</a></li>
+							<li><a href="about.html">Rreth nesh</a></li>
+							<li><a href="services.html">Shërbimet</a></li>
+							<li><a href="contact.html">Kontakti</a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<div class="clear"> </div>
+				</div>
+				<!--End-top-nav-->
+			</div>
+		</div>
+		<!--End-header-->
+		<!--start-image-->
+		<div class="mainText">
+			<p> Mirë se vini në kafenenë më të mirë në qytet! </p>
+		</div>
+		<div class="mainImages">
+			<img class="mySlides" src="images/main.jpg" width="60%"/>
+			<img class="mySlides" src="images/cafe1.jpg" width="60%">
+			<img class="mySlides" src="images/cafe2.jpg" width="60%">
+			<img class="mySlides" src="images/cafe3.jpg" width="60%">
+		</div>
+		<script>
+			var myIndex = 0;
+			motion();
+
+			function motion() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(motion, 2500);
+			}
+		</script>
+        <!--End-image-->
+		<!--start-footer-->
+		<div class="footer">
+			<div class="wrap">
+				<h3>Rreth nesh</h3>
+				<p>Kafeneja jonë është një ndër kafenetë më të frekuentuara në rajon. Kjo për shkak të shërbimit të mirëfillt dhe mikpritjes tonë ndaj klientëve. E hapur në vitin 2010...</p>
+				<a href="register.html">Login</a>
+			</div>	
+		</div>	
+		 <!--End-footer-->
+
+		
+	</body>
+</html>
